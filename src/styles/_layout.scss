@@ -4,5 +4,19 @@
 }
 
 .outer-pad {
-    padding: 0 rem(48);
+    padding-left: rem(48);
+    padding-right: rem(48);
 }
+
+.section-spacer {
+    padding-top: rem(64);
+    padding-bottom: rem(64);
+}
+
+@include media('large') {
+    .outer-pad {
+        padding-left: rem(0);
+        padding-right: rem(0);
+    }
+}
+

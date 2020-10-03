@@ -7,16 +7,23 @@ button, .button {
     border: none;
     background-color: $green;
     color: #fff;
-    border-radius: rem(50);
+    border-radius: rem(60);
     transition: border-radius .3s;
+    margin-top: rem(32);
+    margin-right: rem(16);
     cursor: pointer;
     &:hover, &:focus {
-        border-radius: rem(10);
+        border-radius: rem(15);
     }
 }
 
 .button.button--red {
     background-color: $red;
+}
+.button.button--bordered {
+    background-color: transparent;
+    border: solid 2px $red;
+    color: $red;
 }
 .button.button--blue {
     background-color: $blue;
