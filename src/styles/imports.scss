@@ -1,0 +1,16 @@
+@import './base';
+@import './typography';
+@import './variables';
+@import './layout';
+@import './colors';
+@import './home';
+@import '../components/button/button.scss';
+@import "~silc-core/src/scss/index";
+@import "~silc-grid/src/scss/index";
+
+@include media('medium') {
+    body {
+        background-color: black;
+        font-size: rem(8);
+    }
+}

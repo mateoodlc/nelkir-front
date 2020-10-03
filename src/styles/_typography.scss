@@ -1,0 +1,61 @@
+@import "~silc-core/src/scss/index";
+@import "~silc-grid/src/scss/index";
+@import "./colors";
+
+
+body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+    font-weight: bold;
+}
+h1, .h1 {
+    font-size: rem(42);
+    line-height: 1.1;
+}
+
+h2, .h2 {
+    font-size: rem(36);
+    line-height: 1.1;
+}
+
+h3, .h3 {
+    font-size: rem(20);
+    line-height: (26/20);
+}
+
+p {
+    font-size: rem(18);
+    font-weight: regular;
+    line-height: (21/16);
+}
+
+a {
+    text-decoration: none;
+    font-size: rem(16);
+    font-weight: bold;
+    line-height: (24/16);
+    color: $dark-gray;
+}
+
+@include media('1920') {
+    h1, .h1 {
+        font-size: rem(48);
+    }    
+    h2, .h2 {
+        font-size: rem(42);
+    }
+    h3, .h3 {
+        font-size: rem(22);
+        line-height: (26/22);
+    }
+    p {
+        font-size: rem(18);
+    }
+}
+
+.main-logo {
+    color: $green;
+    font-size: rem(22);
+}
